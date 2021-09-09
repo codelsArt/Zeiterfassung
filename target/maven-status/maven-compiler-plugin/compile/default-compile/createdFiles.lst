@@ -1,0 +1,13 @@
+ch\zli\m223\punchclock\domain\Entry.class
+ch\zli\m223\punchclock\controller\AuthentificationController.class
+ch\zli\m223\punchclock\controller\ArbeiterController.class
+ch\zli\m223\punchclock\ViewModel\LoginResultViewModel.class
+ch\zli\m223\punchclock\service\ArbeiterService.class
+ch\zli\m223\punchclock\controller\ProjektleiterController.class
+ch\zli\m223\punchclock\service\ProjektleiterService.class
+ch\zli\m223\punchclock\service\ZeiteintragService.class
+ch\zli\m223\punchclock\controller\ProjektController.class
+ch\zli\m223\punchclock\controller\SecuredController.class
+ch\zli\m223\punchclock\service\ProjektService.class
+ch\zli\m223\punchclock\controller\ZeiteintragController.class
+ch\zli\m223\punchclock\ViewModel\LoginViewModel.class
