@@ -1,0 +1,1 @@
+mvn exec:java -Dexec.mainClass=ch.zli.m223.punchclock.GenerateToken  -Dsmallrye.jwt.sign.key.location=privateKey.pem
