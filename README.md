@@ -15,3 +15,8 @@ Folgende Dienste stehen während der Ausführung im Profil dev zur Verfügung:
 REST-Schnittstelle der Applikation: http://localhost:8080/entries/
 
 Swagger API: http://localhost:8080/q/swagger-ui/
+
+H2 Console: http://localhost:8080/h2/
+Datenquelle: jdbc:h2:mem:punchclock
+Benutzername: zli
+Passwort: zli
