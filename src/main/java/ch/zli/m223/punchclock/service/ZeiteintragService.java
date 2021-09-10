@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import ch.zli.m223.punchclock.domain.Zeiteintrag;
+import ch.zli.m223.punchclock.domain.Entry;
 
 @ApplicationScoped
 public class ZeiteintragService {
@@ -18,13 +18,13 @@ public class ZeiteintragService {
     }
 
     @Transactional 
-    public Zeiteintrag createEntry(Zeiteintrag zeiteintrag) {
-        entityManager.persist(zeiteintrag);
-        return zeiteintrag;
+    public Entry createEntry(Entry entry) {
+        entityManager.persist(entry);
+        return entry;
     }
 
     @SuppressWarnings("unchecked")
-    public List<Zeiteintrag> findAll() {
+    public List<Entry> findAll() {
         var query = entityManager.createQuery("FROM Entry");
         return query.getResultList();
     }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profil bearbeiten</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="arbeiterBearbeiten.js" type="application/javascript"></script>
+</head>
+<body>
+<form id="bearbeiten">
+  <label for="vorname">neuer Vorname</label>
+  <input type="text" name="vorname" id="vorname" required>
+  <label for="nachname">neuer Nachname</label>
+  <input type="text" name="nachname" id="nachname" required>
+  <label for="eMail">neue E-Mail</label>
+  <input type="text" name="eMail" id="eMail" required>
+  <label for="password">neues Passwort</label>
+  <input type="password" name="password" id="password" required>
+  <input type="submit" value="Speichern" />
+</form>
+<form onsubmit="signOut()">
+  <input type="submit"  value="Abmelden" />
+</form>
+</body>
+</html>

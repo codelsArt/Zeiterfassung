@@ -28,4 +28,9 @@ public class ArbeiterService {
         var query = entityManager.createQuery("FROM Arbeiter");
         return query.getResultList();
     }
+
+    public Arbeiter findArbeiter(String eMail, String passwort) {
+        var query = entityManager.createQuery("FROM User WHERE eMail='" +eMail +"' and password='" + passwort + "'");
+        return (Arbeiter) query.getSingleResult();
+    }
 }

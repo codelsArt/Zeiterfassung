@@ -16,13 +16,13 @@ import java.util.List;
 public class ProjektController {
     @Inject
     ProjektService projektService;
-
+//Alle Projekte ausgeben
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Projekt> list() {
         return projektService.findAll();
     }
-
+//Ein neues Projekt erstellen
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)

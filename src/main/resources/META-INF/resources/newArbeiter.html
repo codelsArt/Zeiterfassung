@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zeiterfassung neuer Arbeiter</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jQuerry.js" type="application/javascript"></script>
+    <script src="createArbeiter.js" type="application/javascript"></script>
+</head>
+<body>
+<form onsubmit="submitArbeiterForm(event)" id="createArbeiterForm">
+    <label for="vorname">Vorname</label>
+    <input type="text" name="vorname" id="vorname" required>
+    <label for="nachname">Nachname</label>
+    <input type="text" name="nachname" id="nachname" required>
+    <label for="eMail">E-Mail</label>
+    <input type="text" name="eMail" id="eMail" required>
+    <label for="password">Passwort</label>
+    <input type="password" name="password" id="password" required>
+    <input type="submit" value="Register" />
+</form>
+</body>
+</html>

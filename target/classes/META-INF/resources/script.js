@@ -61,3 +61,12 @@ document.addEventListener('DOMContentLoaded', function(){
     createEntryForm.addEventListener('submit', createEntry);
     indexEntries();
 });
+
+function signOut(){
+        event.preventDefault()
+        window.location.href='http://localhost:8080/loginPage.html';
+        localStorage.clear();
+    }
+
+
+

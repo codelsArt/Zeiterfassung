@@ -16,13 +16,13 @@ import java.util.List;
 public class ProjektleiterController {
     @Inject
     ProjektleiterService projektleiterService;
-
+//Alle Projektleiter ausgeben
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Projektleiter> list() {
         return projektleiterService.findAll();
     }
-
+//Ein neuer Projektleiter erstellen
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)

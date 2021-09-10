@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class Zeiteintrag {
+public class Entry {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +17,8 @@ public class Zeiteintrag {
     private Arbeiter arbeiter;
     @ManyToOne
     private Projektleiter projektleiter;
+    @ManyToOne
+    private Projekt projekt;
 
     //Getters and Setters
     public Long getId() {

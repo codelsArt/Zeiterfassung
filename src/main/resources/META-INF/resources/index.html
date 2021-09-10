@@ -12,12 +12,18 @@
     <body>
         <form id="createEntryForm">
             <label for="checkIn">Check in</label>
-            <input type="date" name="checkInDate" id="checkIn" required>
-            <input type="time" name="checkInTime" required>
+            <input type="date" name="checkInDate" id="checkIn">
+            <input type="time" name="checkInTime">
             <label for="checkOut">Check out</label>
-            <input type="date" name="checkOutDate" id="checkOut" required>
-            <input type="time" name="checkOutTime" required>
+            <input type="date" name="checkOutDate" id="checkOut">
+            <input type="time" name="checkOutTime">
             <input type="submit" value="Save" />
+        </form>
+        <form onsubmit="signOut()">
+            <input type="submit"  value="Profil bearbeiten" />
+        </form>
+        <form onsubmit="signOut()">
+            <input type="submit"  value="Abmelden" />
         </form>
         <table>
             <thead>
