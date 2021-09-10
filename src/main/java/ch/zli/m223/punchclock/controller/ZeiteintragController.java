@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
-import ch.zli.m223.punchclock.domain.Entry;
+import ch.zli.m223.punchclock.domain.Zeiteintrag;
 import ch.zli.m223.punchclock.service.ZeiteintragService;
 
 @Path("/entries")
@@ -24,15 +24,15 @@ public class ZeiteintragController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Entry> list() {
+    public List<Zeiteintrag> list() {
         return zeiteintragService.findAll();
     }
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Entry add(Entry entry) {
-       return zeiteintragService.createEntry(entry);
+    public Zeiteintrag add(Zeiteintrag zeiteintrag) {
+       return zeiteintragService.createEntry(zeiteintrag);
     }
 
 }

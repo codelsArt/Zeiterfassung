@@ -18,4 +18,13 @@ public class Projekt {
     @ManyToOne
     private Arbeiter arbeiter;
 
+    //Getters and Setters
+    public Long getId() {return id;}
+    public void setId(Long id) {this.id = id;}
+    public List<Arbeiter> getArbeiterList() {return arbeiterList;}
+    public void setArbeiterList(List<Arbeiter> arbeiterList) {this.arbeiterList = arbeiterList;}
+    public Projektleiter getProjektleiter() {return projektleiter;}
+    public void setProjektleiter(Projektleiter projektleiter) {this.projektleiter = projektleiter;}
+    public Arbeiter getArbeiter() {return arbeiter;}
+    public void setArbeiter(Arbeiter arbeiter) {this.arbeiter = arbeiter;}
 }

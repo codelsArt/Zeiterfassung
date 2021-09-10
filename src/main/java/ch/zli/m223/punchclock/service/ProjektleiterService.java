@@ -1,8 +1,5 @@
 package ch.zli.m223.punchclock.service;
 
-import ch.zli.m223.punchclock.domain.Arbeiter;
-import ch.zli.m223.punchclock.domain.Entry;
-import ch.zli.m223.punchclock.domain.Projekt;
 import ch.zli.m223.punchclock.domain.Projektleiter;
 
 import javax.enterprise.context.ApplicationScoped;

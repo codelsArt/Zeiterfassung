@@ -8,12 +8,12 @@
     <title>Zeiterfassung LogIn</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="jQuerry.js" type="application/javascript"></script>
-    <script src="loginScript.js" type="application/javascript"></script>
+    <script src="loginScript.js" type="application/javascript"></script>o
 </head>
 <body>
-<form onsubmit="submitLoginForm()" id="createEntryForm">
-    <label for="email">E-Mail</label>
-    <input type="text" name="email" id="email" required>
+<form onsubmit="submitLoginForm(event)" id="createLoginForm">
+    <label for="username">E-Mail</label>
+    <input type="text" name="username" id="username" required>
     <label for="password">Password</label>
     <input type="password" name="password" id="password" required>
     <input type="submit" value="Log-In" />

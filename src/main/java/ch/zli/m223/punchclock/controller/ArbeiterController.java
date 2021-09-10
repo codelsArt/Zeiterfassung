@@ -1,9 +1,7 @@
 package ch.zli.m223.punchclock.controller;
 
 import ch.zli.m223.punchclock.domain.Arbeiter;
-import ch.zli.m223.punchclock.domain.Entry;
 import ch.zli.m223.punchclock.service.ArbeiterService;
-import ch.zli.m223.punchclock.service.ZeiteintragService;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import javax.inject.Inject;

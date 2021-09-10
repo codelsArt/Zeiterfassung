@@ -1,15 +1,24 @@
-function submitLoginForm(){
+function submitLoginForm(event){
+    event.preventDefault();
     console.log("hallo");
-    $.ajax({
-        type: "POST",
-        url: 'http://localhost:8080/auth/login', // script to do the actual authentication, set session etc.
-        data: {
-            username: "email",
-            password: "password", // get element value of password here
-        },
-        success: function(data) {
-            // process result
-            console.log(data);
-        },
-    });
+    let xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            if (this.responseText!==null){
+                window.location.href='http://localhost:8080/';
+            }
+        }
+    }
+    xhttp.open('POST', 'http://localhost:8080/auth/login', true)
+    xhttp.setRequestHeader('Content-Type', 'application/json')
+    xhttp.send(JSON.stringify({
+        username: document.getElementById('username').value,
+        password: document.getElementById('password').value
+    }))
+
+}
+function goToURL(url){
+// some code to go to url
+    location.href='http://localhost:8080/';
+
 }
